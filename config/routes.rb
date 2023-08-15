@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'greetings/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root 'greetings#index'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :greetings
+
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :greetings, only: [:index, :show]
+    end
+  end
 end
