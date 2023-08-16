@@ -88,6 +88,12 @@ bundle install
 bin/rails db:setup
 ```
 
+- add some data
+
+```sh
+rails db:seed
+```
+
 - start server
 
 ```sh
