@@ -151,6 +151,6 @@ Authors would like to thank:
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](https://github.com/ikennarichard/hello-rails-react/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
