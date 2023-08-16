@@ -141,7 +141,9 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Authors would like to thank:
+
 - [Microverse](https://www.microverse.org/)
+
 - Coding Partners
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
