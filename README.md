@@ -45,6 +45,7 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started
+
 To clone the repository in local environment try following steps.
 
 ### Prerequisites
