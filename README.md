@@ -60,6 +60,7 @@ Likewise for Node.js and npm for package installation.
 ```
 $ ruby --version && gem --version
 ```
+
 ### Setup
 
 Clone the repository using [this link](https://github.com/ikennarichard/hello-rails-react.git).
