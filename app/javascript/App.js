@@ -6,7 +6,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/greetings/greeting" element={<Greeting />} />
+        <Route path="/" element= {<h1>Hello Rails React</h1>} />
+        <Route path="/greetings" element={<Greeting />} />
       </Routes>
     </BrowserRouter>
   )

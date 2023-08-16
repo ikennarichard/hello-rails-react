@@ -17,7 +17,7 @@ export default function Greeting() {
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>Error: Please try aagin</div>;
   }
 
   return <p>Greeting: {greeting}</p>;
