@@ -1,25 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { fetchRandomGreeting } from './apiSlice';
 
 const initialState = {
-  value: [],
+  greeting: '',
+  error: null,
+  isLoading: false
 }
 
 export const greetingsSlice = createSlice({
-  name: 'greeting',
+  name: 'greetings',
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchRandomGreeting.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+      .addCase(fetchRandomGreeting.fulfilled, (state, action) => {
+        state.greeting = action.payload;
+        state.isLoading = false;
+        state.error = null;
+      })
+      .addCase(fetchRandomGreeting.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message;
+      });
   },
 })
-
-export const { increment, decrement, incrementByAmount } = greetingsSlice.actions
 
 export default greetingsSlice.reducer
